@@ -261,7 +261,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what I've done";
+    content: "Where I've worked";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -296,7 +296,7 @@ section .title::after{
 }
 /* skills section styling */
 .skills .title::after{
-    content: "what i know";
+    content: "What I know";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -369,7 +369,7 @@ section .title::after{
 }
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "What I've done";
 }
 .teams .carousel .card{
     background: #222;
