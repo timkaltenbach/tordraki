@@ -1,0 +1,21 @@
+<script>
+    function callback() {
+        fetch("https://jsonplaceholder.typicode.com/users")
+            .then(resp => resp.json())
+            .then((jsonResp) => {
+                console.log("I’m back!", jsonResp);
+    
+                let htmlResp = '';
+                for (let user of jsonResp) {
+                    htmlResp += user.name + ', ';
+                }
+    
+    
+                console.log("I’m done processing!", htmlResp);
+                document.getElementById("results").innerHTML = htmlResp;
+            });
+    }
+    </script>
+    <button onclick="callback()">Get data</button>
+    <div id="results"></div>
+    
